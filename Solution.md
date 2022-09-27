@@ -1,3 +1,5 @@
+# StarkNet-Cairo-101
+
 Este tutorial está creado con la finalidad de ayudar a nuevos usuarios y que tengan donde consultar en caso de que no puedan avanzar. La única forma de aprender sobre Cairo es ponerse manos a la obra.
 
 ### Como obtener los puntos
@@ -6,10 +8,27 @@ Revisar el código del contrato. Interactuar con el contrato a través de Voyage
 
 ### Token Cairo-101
 
-Agrega el siguiente token en tu wallet ya sea ArgentX o Braavos
-Token_address =  0x05C6B1379f1D4c8A4f5dB781A706b63a885f3f9570F7863629E99e2342ac344c
+Agrega el siguiente token en tu wallet ya sea [ArgentX](https://www.argent.xyz/argent-x/) o [Braavos](https://braavos.app/)
+`token_address =  0x05C6B1379f1D4c8A4f5dB781A706b63a885f3f9570F7863629E99e2342ac344c`
 
-### Ejercicio 1 - Sintaxis general
+### Índice
+
+1. [Ejercicio 1](#ej1)
+2. [Ejercicio 2](#ej2)
+3. [Ejercicio 3](#ej3)
+4. [Ejercicio 4](#ej4)
+5. [Ejercicio 5](#ej5)
+6. [Ejercicio 6](#ej6)
+7. [Ejercicio 7](#ej7)
+8. [Ejercicio 8](#ej8)
+9. [Ejercicio 9](#ej9)
+10. [Ejercicio 10](#ej10)
+11. [Ejercicio 11](#ej11)
+12. [Ejercicio 12](#ej12)
+13. [Ejercicio 13](#ej13)
+14. [Resultado](#result)
+
+### Ejercicio 1 - Sintaxis general <a name="ej1"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex01.cairo)
 
@@ -18,13 +37,14 @@ Token_address =  0x05C6B1379f1D4c8A4f5dB781A706b63a885f3f9570F7863629E99e2342ac3
 En este ejercicio solo debemos llamar la función `claim_points()` para obtener los puntos.
 
 Función `claim_points()`
+
 ![image](assets/ejercicio1-0.png "ejercicio1-0")
 
 ![image](assets/ejercicio1-1.png "ejercicio1-1")
 
 ---
 
-### Ejercicio 2 - Variables de almacenamiento, getters, asserts
+### Ejercicio 2 - Variables de almacenamiento, getters, asserts <a name="ej2"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex02.cairo)
 
@@ -46,7 +66,7 @@ Ingreso el valor obtenido en la función anterior. De esta manera ya puedo obten
 
 ---
 
-### Ejercicio 3 - Leyendo y escribiendo variables de almacenamiento
+### Ejercicio 3 - Leyendo y escribiendo variables de almacenamiento <a name="ej3"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex03.cairo)
 
@@ -76,7 +96,7 @@ De esta manera ya puedo obtener los puntos.
 
 ---
 
-### Ejercicio 4 - Mappings
+### Ejercicio 4 - Mappings <a name="ej4"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex04.cairo)
 
@@ -106,7 +126,7 @@ Ingreso el valor obtenido en la función anterior pero le resto 32, ya que dentr
 
 ---
 
-### Ejercicio 5 - Visibilidad de variables
+### Ejercicio 5 - Visibilidad de variables <a name="ej5"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex05.cairo)
 
@@ -144,7 +164,7 @@ Ingreso el valor obtenido en la función anterior pero le resto 23, ya que dentr
 
 ---
 
-### Ejercicio 6 - Visibilidad de funciones
+### Ejercicio 6 - Visibilidad de funciones <a name="ej6"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex06.cairo)
 
@@ -176,7 +196,7 @@ Ingreso el valor obtenido en la función anterior. De esta manera ya puedo obten
 
 ---
 
-### Ejercicio 7 - Comparando valores
+### Ejercicio 7 - Comparando valores <a name="ej7"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex07.cairo)
 
@@ -200,7 +220,7 @@ De esta manera ya puedo obtener los puntos.
 
 ---
 
-### Ejercicio **8 - Recursiones nivel 1**
+### Ejercicio **8 - Recursiones nivel 1** <a name="ej8"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex08.cairo)
 
@@ -234,7 +254,7 @@ De esta manera ya puedo obtener los puntos.
 
 ---
 
-### Ejercicio **9 - Recursiones nivel 2**
+### Ejercicio **9 - Recursiones nivel 2** <a name="ej9"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex09.cairo)
 
@@ -245,6 +265,7 @@ Como el ejercicio anterior empieza a iterar de izquierda a derecha.
 La condición que se tiene que cumplir es que la `suma temporal * 2` tiene que ser menor o igual que la `suma temporal + el elemento actual` .
 
 Función `claim_points()`
+
 ![image](assets/ejercicio9-0.png "ejercicio9-0")
 
 Función `get_sum_internal()`
@@ -261,7 +282,7 @@ De esta manera ya puedo obtener los puntos con la solución anterior.
 
 ---
 
-### Ejercicio **10 - Composability**
+### Ejercicio **10 - Composability** <a name="ej10"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex10.cairo)
 
@@ -287,7 +308,7 @@ Voy al contrato A. Ingreso el valor secreto y de esta manera ya puedo obtener lo
 
 ---
 
-### Ejercicio **11 - Importando funciones**
+### Ejercicio **11 - Importando funciones** <a name="ej11"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex11.cairo)
 
@@ -317,7 +338,7 @@ Le resto 42069, ya que dentro de la función `secret_value()` suma ese valor y d
 
 ---
 
-### Ejercicio **12 - Eventos**
+### Ejercicio **12 - Eventos** <a name="ej12"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex12.cairo)
 
@@ -341,7 +362,7 @@ Le resto 32, ya que cuando se emitió el evento le sumaron ese valor.
 
 ---
 
-### Ejercicio **13 - Privacidad en StarkNet**
+### Ejercicio **13 - Privacidad en StarkNet** <a name="ej13"></a>
 
 [Código](https://github.com/starknet-edu/starknet-cairo-101/blob/main/contracts/ex13.cairo)
 
@@ -381,5 +402,9 @@ De esta manera ya puedo obtener los puntos.
 
 ![image](assets/ejercicio13-4.png "ejercicio13-4")
 
-## Resultado
+---
+
+### Resultado <a name="result"></a>
+
+![image](assets/result.png "result")
 
